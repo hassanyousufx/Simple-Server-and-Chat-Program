@@ -2,6 +2,8 @@
 
 A simple socket programming which creates a connection between two terminals on linux. This was my second semester final project, so I thought I'll share with you.
 
+Video: https://www.youtube.com/watch?v=IydkqseK6oQ
+
 # Requirements
 
 1. Ubuntu 12.0 LTS or higher
