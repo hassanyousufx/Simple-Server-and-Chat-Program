@@ -13,7 +13,7 @@
 #include <arpa/inet.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+#define bufsize 1024 //added a macro to read buffer input from client
 using namespace std;
 
 int main()
@@ -57,8 +57,7 @@ int main()
     int client, server;
     int portNum = 1500;
     bool isExit = false;
-    int bufsize = 1024;
-    char buffer[bufsize];
+    char buffer[bufsize]; //bufsize defined in macro
 
     struct sockaddr_in server_addr;
     socklen_t size;

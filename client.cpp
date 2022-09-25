@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <netdb.h>
-
+#define bufsize 1024 //added a macro to read buffer input from server
 using namespace std;
 
 int main()
@@ -56,8 +56,7 @@ int main()
     int client;
     int portNum = 1500; // NOTE that the port number is same for both client and server
     bool isExit = false;
-    int bufsize = 1024;
-    char buffer[bufsize];
+    char buffer[bufsize]; //bufsize defined in macro
     char* ip = "127.0.0.1";
 
     struct sockaddr_in server_addr;
